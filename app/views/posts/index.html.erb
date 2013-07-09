@@ -1,0 +1,5 @@
+<% @posts.each do |p| %>
+Post Title:<%= link_to p.title, post_path(p.id) %><br />
+<% end %>
+<%= paginate @posts %>
+<%= link_to('Add Post', new_post_path)%> 
