@@ -1,0 +1,10 @@
+<%= simple_form_for @post do |p| %>
+<%# p.label :title %><br />
+<%# p.text_field :title %><br />
+<%= p.input :title, :label => "Title" %>
+<%# p.label :description %><br />
+<%# p.text_area :description %><br />
+<%= p.input :description, :input_html => { :class => "tinymce", :rows => "10", :cols => "50" } %>
+<%= p.submit %>
+<%= tinymce %>
+<% end %>

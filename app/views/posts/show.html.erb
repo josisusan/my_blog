@@ -1,0 +1,15 @@
+Title: <%= @post.title %><br />
+Description: <br /><%= raw @post.description %>
+
+Comments:
+<br />
+<%= link_to 'Add Comment', new_post_comment_path(@post.id)%>
+<br />
+<br />
+<% @post.comments.each do |p| %>
+    Reviewer: &nbsp;
+    <%= p.commenter%>
+  <p>
+    <%= p.body %>
+  </p><br />
+  <% end %>

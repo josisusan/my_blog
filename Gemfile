@@ -6,8 +6,11 @@ gem 'rails', '3.2.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
-
+gem 'dynamic_form'
+gem 'devise'
+gem 'better_errors'
+gem 'kaminari'
+gem 'tinymce-rails'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -16,8 +19,11 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platforms => :ruby
+  gem 'pry'
 
   gem 'uglifier', '>= 1.0.3'
+
+  gem 'simple_form'
 end
 
 gem 'jquery-rails'
